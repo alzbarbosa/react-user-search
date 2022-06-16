@@ -23,7 +23,7 @@ const SearchForm = () => {
 
         if(searchByTag !== "") {
             usersFilteredByTag = usersFilteredByName.filter((user)=> {
-                return user.tag && user.tag[0].toLowerCase().includes(searchByTag.toLowerCase()) 
+                return user.tag.some((tag)=> tag.toLowerCase().includes(searchByTag.toLowerCase())) 
             })
         } else (
             usersFilteredByTag = usersFilteredByName

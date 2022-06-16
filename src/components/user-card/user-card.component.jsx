@@ -45,9 +45,11 @@ const UserCard = (props) => {
                         </div>
                         )}
             
-            {tag && (
+            {tag.length > 0 && (
             <div className="tag-container">
-                <p className="tag-item">{tag}</p>
+                {tag.map((item, index) => {
+                    return <span className="tag-item" key={index}>{item}</span>
+                })}    
             </div>
             )}
     

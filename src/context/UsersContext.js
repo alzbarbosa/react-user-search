@@ -6,7 +6,7 @@ const url = "https://api.hatchways.io/assessment/students"
 
 const usersArray = Object.values(userData)
 const usersArrayAddTagProperty = usersArray[0].map((user)=> ({
-    ...user, tag: null
+    ...user, tag: []
 }))
 
 

@@ -13,16 +13,17 @@ const AddTag = ({userId}) => {
         
         const id = userId
         const usersUpdate = users.map((user)=> {
-            return user.id === id? {...user, tag: tagName} : user
+            return user.id === id? {...user, tag: [...user.tag, tagName]} : user
         })
         const searchedUsersUpdate = searchedUsers.map((user) => {
-            return user.id === id? {...user, tag: tagName} : user
+            return user.id === id? {...user, tag: [...user.tag, tagName]} : user
 
         })
 
         setUsers(usersUpdate)
         setSearchedUsers(searchedUsersUpdate)
         setTagName("")
+        console.log(usersUpdate)
 
     }
 

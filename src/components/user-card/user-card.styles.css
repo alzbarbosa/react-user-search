@@ -54,12 +54,18 @@
 }
 
 .tag-container {
-    padding: .8em;
+    display: flex;
+    width: 100%;
+    margin-top: 0.25em;
+}
+
+.tag-item {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    padding: 0.8em;
+    margin: 3px;
     text-align: center;
-    display: inline-block;
-    margin: 5px;
 }
 
 .grades-container {
