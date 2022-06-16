@@ -1,0 +1,80 @@
+.user-card-container {
+    display: flex;
+    align-items: center;
+    padding: 5px 0 20px 25px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    margin-top:0.5em;
+}
+
+.user-img-container {
+    height: 125px;
+    align-self: flex-start;
+    margin-top: 1em;
+}
+
+.user-img {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    height: 100%;  
+}
+
+.user-name {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.user-info-container {
+    padding-left: 2.5em;
+    width: 100%; 
+}
+
+.user-info {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+}
+
+.user-info p {
+    padding: 2px 0;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.button-display {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    margin-left: auto;
+}
+
+.tag-container {
+    padding: .8em;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+
+.grades-container {
+    margin-top: 1em;
+}
+
+.icon-signal {
+   color: rgba(0, 0, 0, 0.50);
+   
+}
+
+.icon-signal:hover,
+.icon-signal:focus {
+    cursor: pointer;
+    color: black;
+}
+
+
