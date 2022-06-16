@@ -83,4 +83,53 @@
     color: black;
 }
 
+@media (max-width: 1000px) {
+    .user-name {
+        font-size: 1.75rem;
+    }
+    .user-info {
+        padding: 0.5em 1em;
+        font-size: .90rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .user-card-container {
+        flex-direction: column;
+    }
+
+    .user-img-container {
+        margin-left: 2.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media (max-width: 800px) {
+    .user-info-container {
+        padding-left: .25em;
+        }
+    .user-img-container {
+        margin-left: .25em;
+    }
+    .user-name {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .user-card-container {
+            padding: 5px 0 20px 5px;
+    }
+
+}
+
+@media (max-width: 300px) {
+        .user-name {
+                font-size: 1.25rem;
+            }
+
+}
+
 

@@ -8,6 +8,7 @@
 body {
 font-family: 'Raleway', sans-serif;
 background-color: antiquewhite;
+font-size: 16px;
 }
 
 textarea,
@@ -18,12 +19,15 @@ input {
 .app-container {
   display: flex;
   flex-direction: column;
-  width: 800px;
-  height: 665px;
-  margin: 50px auto;
+  width: 70vw;
+  max-height: 80vh;
   background-color: #fff;
   padding: 5px;
   border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .user-list-container {
@@ -47,6 +51,18 @@ input {
   background-clip: content-box;
   background-color: rgba(0, 0, 0, 0.60);
   height: 60px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+      width: 80vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .app-container {
+    width: 95vw;
+  }
 }
 
 

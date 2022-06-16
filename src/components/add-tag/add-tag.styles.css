@@ -7,3 +7,17 @@
     border-bottom: 1px solid black;
     margin-top: 0.5em;
 }
+
+@media (max-width: 1000px) {
+    .tag-input {
+        font-size: 1rem;
+        width: 30%;
+    }
+}
+
+@media (max-width: 800px) {
+    .tag-input {
+        width: 45%;
+        }
+
+}

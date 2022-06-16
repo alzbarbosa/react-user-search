@@ -1,22 +1,28 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
 import useFetch from "../hooks/useFetch";
-import { userData } from "../userData";
 
 const url = "https://api.hatchways.io/assessment/students"
-
-const usersArray = Object.values(userData)
-const usersArrayAddTagProperty = usersArray[0].map((user)=> ({
-    ...user, tag: []
-}))
-
 
 const UsersContext = createContext()
 
 const UsersProvider = ({ children }) => {
-    //const { response: users, error, isLoading } = useFetch(url)
-    const [users, setUsers] = useState(usersArrayAddTagProperty)
-    const [searchedUsers, setSearchedUsers] = useState(users)
+const { response: studentsData, error, isLoading } = useFetch(url)
 
+const [users, setUsers] = useState([])
+const [searchedUsers, setSearchedUsers] = useState([])
+
+useEffect(()=> {
+        let newUsers
+        if(isLoading) {
+            newUsers = []
+        } else (
+            newUsers = studentsData.students.map((user)=> ({
+    ...user, tag: [] })
+    ) )
+        setUsers(newUsers)
+        setSearchedUsers(newUsers)
+           
+},[isLoading])
 
     return (
         <UsersContext.Provider value={{ users, setUsers, searchedUsers, setSearchedUsers }}>

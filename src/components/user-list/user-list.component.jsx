@@ -1,17 +1,6 @@
 import UserCard from "../user-card/user-card.component"
 
-const UserList = ({users, isLoading, error}) => {
-
-    if(isLoading) {
-        return (
-            <h1>Loading</h1>
-        )
-    }
-    if(error) {
-        return (
-            <h3>Error</h3>
-        )
-    }
+const UserList = ({users}) => {
 
     return (
         <>

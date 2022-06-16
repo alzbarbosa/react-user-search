@@ -23,8 +23,6 @@ const AddTag = ({userId}) => {
         setUsers(usersUpdate)
         setSearchedUsers(searchedUsersUpdate)
         setTagName("")
-        console.log(usersUpdate)
-
     }
 
     return (
