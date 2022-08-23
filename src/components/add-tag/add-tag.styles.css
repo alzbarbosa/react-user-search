@@ -1,23 +1,22 @@
 .tag-input {
-    width: 25%;
-    height: 50px;
-    font-size: 1.25rem;
-    padding: 5px;
-    border: none;
-    border-bottom: 1px solid black;
-    margin-top: 0.5em;
+  width: 25%;
+  height: 50px;
+  font-size: 1.25rem;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 0.5em;
 }
 
 @media (max-width: 1000px) {
-    .tag-input {
-        font-size: 1rem;
-        width: 30%;
-    }
+  .tag-input {
+    font-size: 1rem;
+    width: 30%;
+  }
 }
 
 @media (max-width: 800px) {
-    .tag-input {
-        width: 45%;
-        }
-
+  .tag-input {
+    width: 45%;
+  }
 }
