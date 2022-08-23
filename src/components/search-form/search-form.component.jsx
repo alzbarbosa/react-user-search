@@ -15,7 +15,9 @@ const SearchForm = () => {
 
         if(searchByName !== "") {
             usersFilteredByName = users.filter((user) => {
-                return user.firstName.toLowerCase().includes(searchByName.toLowerCase())
+                if (user.firstName.toLowerCase().includes(searchByName.toLowerCase()) || user.lastName.toLowerCase().includes(searchByName.toLowerCase()) ) {
+                    return user
+                }
         })
         } else (
             usersFilteredByName = users
